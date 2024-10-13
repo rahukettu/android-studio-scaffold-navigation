@@ -1,0 +1,79 @@
+# Scaffold Navigation in Jetpack Compose
+
+A simple Android project demonstrating how to implement navigation using **Jetpack Compose**'s `Scaffold`, `TopAppBar`, and `NavHost`. 
+This project showcases navigation between multiple screens (Home, Info, and Settings) with a clean and modern Material 3 design.
+
+## Features
+
+- **Jetpack Compose**: Uses the latest Android UI toolkit.
+- **Material 3**: Utilizes Material Design 3 components such as `Scaffold`, `TopAppBar`, and `DropdownMenu`.
+- **Navigation**: Implements navigation using `NavController` and `NavHost`.
+- **Dropdown Menu**: Adds actions in the top bar for navigating between screens (Info and Settings).
+- **Back Navigation**: Provides back navigation from secondary screens (Info and Settings) using the back arrow.
+
+## Setup Instructions
+
+To run this project on your local machine, follow these steps:
+
+### Prerequisites
+
+- Android Studio (Arctic Fox or later)
+- Android SDK 33 or later
+- Kotlin 1.5 or higher
+- Gradle 7.0 or higher
+
+### Steps to Run
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/rahukettu/android-studio-scaffold-navigation.git
+
+    Open the project in Android Studio.
+    Sync Gradle to download the dependencies.
+    Run the project on your emulator or physical device.
+
+Dependencies
+
+Ensure the following dependencies are added in your build and updated. 
+Gradle file:
+
+gradle
+
+dependencies {
+    implementation "androidx.navigation:navigation-compose:2.7.4"
+    implementation "androidx.compose.material3:material3:1.1.1"
+}
+
+Project Structure
+
+css
+
+.
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/com/example/scaffold_navigation/
+│   │       └── res/
+│   └── build.gradle
+└── build.gradle
+
+    MainActivity.kt: The main entry point of the app, where ScaffoldApp() is set up.
+    ScaffoldApp.kt: Handles the NavHost, Scaffold, and navigation logic.
+    MainScreen.kt: Displays the home screen.
+    InfoScreen.kt and SettingsScreen.kt: Additional screens accessed via the dropdown menu.
+
+License
+
+This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+
+If you have any questions, feel free to reach out to me at [rahukettu@gmx.com].
